@@ -10,9 +10,10 @@
     <PublishProfile>win-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <WinUISDKReferences>false</WinUISDKReferences>
+    <EnableMsixTooling>false</EnableMsixTooling>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
-  <EnableWindowsTargeting>true</EnableWindowsTargeting></PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting><GenerateProjectPriFile>false</GenerateProjectPriFile></PropertyGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -52,7 +53,7 @@
   -->
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
-  <EnableWindowsTargeting>true</EnableWindowsTargeting></PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting><GenerateProjectPriFile>false</GenerateProjectPriFile></PropertyGroup>
 
   <!-- Publish Properties -->
   <PropertyGroup>
@@ -60,5 +61,5 @@
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
-  <EnableWindowsTargeting>true</EnableWindowsTargeting></PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting><GenerateProjectPriFile>false</GenerateProjectPriFile></PropertyGroup>
 </Project>

@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-  <EnableWindowsTargeting>true</EnableWindowsTargeting></PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting><GenerateProjectPriFile>false</GenerateProjectPriFile></PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
