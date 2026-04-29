@@ -1,31 +1,59 @@
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Windowing;
+using Microsoft.UI;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using System.Runtime.InteropServices;
+using WinRT.Interop;
 
 namespace VistaForge.UI
 {
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainWindow : Window
     {
+        [DllImport("user32.dll")]
+        static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+
+        [DllImport("user32.dll")]
+        static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll")]
+        static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        const int GWL_EXSTYLE = -20;
+        const int WS_EX_TOOLWINDOW = 0x00000080;
+        const int WS_EX_TRANSPARENT = 0x00000020;
+        const int WS_EX_LAYERED = 0x00080000;
+
+        static readonly IntPtr HWND_BOTTOM = new IntPtr(1);
+        const uint SWP_NOSIZE = 0x0001;
+        const uint SWP_NOMOVE = 0x0002;
+        const uint SWP_NOACTIVATE = 0x0010;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            // Setup Frameless and Transparent Window
+            IntPtr hWnd = WindowNative.GetWindowHandle(this);
+            WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
+            AppWindow appWindow = AppWindow.GetFromWindowId(wndId);
+
+            var presenter = OverlappedPresenter.Create();
+            presenter.SetBorderAndTitleBar(false, false);
+            presenter.IsMaximizable = false;
+            presenter.IsMinimizable = false;
+            presenter.IsResizable = false;
+            appWindow.SetPresenter(presenter);
+
+            appWindow.TitleBar.ExtendsContentIntoTitleBar = true;
+
+            // Apply Win32 Hacks for Bottom-Most & Transparency
+            // Set EX style
+            int exStyle = GetWindowLong(hWnd, GWL_EXSTYLE);
+            exStyle |= WS_EX_TOOLWINDOW; // Hide from Alt-Tab
+            SetWindowLong(hWnd, GWL_EXSTYLE, exStyle);
+
+            // Send to bottom
+            SetWindowPos(hWnd, HWND_BOTTOM, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE);
         }
     }
 }

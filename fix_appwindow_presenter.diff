@@ -1,0 +1,20 @@
+<<<<<<< SEARCH
+            var presenter = AppWindowPresenter.Create(AppWindowPresenterKind.Default);
+            appWindow.SetPresenter(presenter);
+
+            if (presenter is OverlappedPresenter overlappedPresenter)
+            {
+                overlappedPresenter.SetBorderAndTitleBar(false, false);
+                overlappedPresenter.IsMaximizable = false;
+                overlappedPresenter.IsMinimizable = false;
+                overlappedPresenter.IsResizable = false;
+            }
+=======
+            if (appWindow.Presenter is OverlappedPresenter overlappedPresenter)
+            {
+                overlappedPresenter.SetBorderAndTitleBar(false, false);
+                overlappedPresenter.IsMaximizable = false;
+                overlappedPresenter.IsMinimizable = false;
+                overlappedPresenter.IsResizable = false;
+            }
+>>>>>>> REPLACE
