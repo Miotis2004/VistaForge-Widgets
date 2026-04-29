@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    - name: Setup .NET 10
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.x'
+      env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    - name: Restore dependencies
+      run: dotnet restore VistaForge/VistaForge.slnx
+
+    - name: Build solution
+      run: dotnet build VistaForge/VistaForge.slnx --configuration Release --no-restore
+
+    - name: Run tests
+      run: dotnet test VistaForge/VistaForge.slnx --configuration Release --no-build
