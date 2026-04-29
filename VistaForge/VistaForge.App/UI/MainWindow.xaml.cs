@@ -37,16 +37,13 @@ namespace VistaForge.UI
             WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
             AppWindow appWindow = AppWindow.GetFromWindowId(wndId);
 
-            var presenter = AppWindowPresenter.Create(AppWindowPresenterKind.Default);
+            var presenter = OverlappedPresenter.Create();
             appWindow.SetPresenter(presenter);
 
-            if (presenter is OverlappedPresenter overlappedPresenter)
-            {
-                overlappedPresenter.SetBorderAndTitleBar(false, false);
-                overlappedPresenter.IsMaximizable = false;
-                overlappedPresenter.IsMinimizable = false;
-                overlappedPresenter.IsResizable = false;
-            }
+            presenter.SetBorderAndTitleBar(false, false);
+            presenter.IsMaximizable = false;
+            presenter.IsMinimizable = false;
+            presenter.IsResizable = false;
 
             appWindow.TitleBar.ExtendsContentIntoTitleBar = true;
 
