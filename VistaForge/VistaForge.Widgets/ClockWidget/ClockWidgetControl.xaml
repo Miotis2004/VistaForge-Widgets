@@ -1,0 +1,51 @@
+<UserControl
+    x:Class="VistaForge.Widgets.ClockWidget.ClockWidgetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VistaForge.Widgets.ClockWidget"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Transparent" Width="200" Height="200">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ToggleSwitch x:Name="ModeToggle" Header="Analog Mode" Grid.Row="0" HorizontalAlignment="Center" Toggled="ModeToggle_Toggled"/>
+
+        <!-- Digital View -->
+        <TextBlock x:Name="DigitalText" Grid.Row="1" FontSize="48" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible"/>
+
+        <!-- Analog View -->
+        <Grid x:Name="AnalogGrid" Grid.Row="1" Visibility="Collapsed" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Clock Face -->
+            <Ellipse Stroke="Gray" StrokeThickness="2" Fill="Transparent"/>
+
+            <!-- Hour Hand -->
+            <Line x:Name="HourHand" X1="75" Y1="75" X2="75" Y2="35" Stroke="Black" StrokeThickness="4" StrokeEndLineCap="Round">
+                <Line.RenderTransform>
+                    <RotateTransform x:Name="HourRotate" CenterX="75" CenterY="75"/>
+                </Line.RenderTransform>
+            </Line>
+
+            <!-- Minute Hand -->
+            <Line x:Name="MinuteHand" X1="75" Y1="75" X2="75" Y2="20" Stroke="Black" StrokeThickness="3" StrokeEndLineCap="Round">
+                <Line.RenderTransform>
+                    <RotateTransform x:Name="MinuteRotate" CenterX="75" CenterY="75"/>
+                </Line.RenderTransform>
+            </Line>
+
+            <!-- Second Hand -->
+            <Line x:Name="SecondHand" X1="75" Y1="75" X2="75" Y2="10" Stroke="Red" StrokeThickness="1" StrokeEndLineCap="Round">
+                <Line.RenderTransform>
+                    <RotateTransform x:Name="SecondRotate" CenterX="75" CenterY="75"/>
+                </Line.RenderTransform>
+            </Line>
+
+            <!-- Center Dot -->
+            <Ellipse Width="8" Height="8" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</UserControl>

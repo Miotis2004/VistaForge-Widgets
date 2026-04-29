@@ -1,0 +1,44 @@
+<UserControl
+    x:Class="VistaForge.Widgets.SystemMonitorWidget.SystemMonitorWidgetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VistaForge.Widgets.SystemMonitorWidget"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Transparent" Width="200" Padding="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- CPU -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,12">
+            <Grid>
+                <TextBlock Text="CPU" FontWeight="SemiBold"/>
+                <TextBlock x:Name="CpuText" Text="0%" HorizontalAlignment="Right"/>
+            </Grid>
+            <ProgressBar x:Name="CpuProgress" Maximum="100" Value="0" Margin="0,4,0,0" Height="8"/>
+        </StackPanel>
+
+        <!-- RAM -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,12">
+            <Grid>
+                <TextBlock Text="RAM" FontWeight="SemiBold"/>
+                <TextBlock x:Name="RamText" Text="0%" HorizontalAlignment="Right"/>
+            </Grid>
+            <ProgressBar x:Name="RamProgress" Maximum="100" Value="0" Margin="0,4,0,0" Height="8" Foreground="Orange"/>
+        </StackPanel>
+
+        <!-- Disk -->
+        <StackPanel Grid.Row="2">
+            <Grid>
+                <TextBlock Text="Disk" FontWeight="SemiBold"/>
+                <TextBlock x:Name="DiskText" Text="0%" HorizontalAlignment="Right"/>
+            </Grid>
+            <ProgressBar x:Name="DiskProgress" Maximum="100" Value="0" Margin="0,4,0,0" Height="8" Foreground="Green"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
