@@ -1,10 +1,15 @@
-﻿namespace VistaForge.Core.Tests;
+using System;
+using Moq;
+using Xunit;
 
-public class UnitTest1
+namespace VistaForge.Core.Tests
 {
-    [Fact]
-    public void Test1()
+    public class BasicMathTests
     {
-
+        [Fact]
+        public void TestMath_Passes()
+        {
+            Assert.Equal(4, 2 + 2);
+        }
     }
 }
