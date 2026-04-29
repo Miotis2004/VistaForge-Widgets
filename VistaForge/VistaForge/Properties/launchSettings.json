@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VistaForge (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VistaForge (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

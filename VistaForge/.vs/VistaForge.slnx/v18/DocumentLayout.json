@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6050A351-F79C-4A72-8F7B-DBD93F1C6D54}|VistaForge.Widgets\\VistaForge.Widgets.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge.widgets\\vistaforge.widgets.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6050A351-F79C-4A72-8F7B-DBD93F1C6D54}|VistaForge.Widgets\\VistaForge.Widgets.csproj|solutionrelative:vistaforge.widgets\\vistaforge.widgets.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B7817E-80F1-4077-A13C-D2FDC6A34CF6}|VistaForge.Core\\VistaForge.Core.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge.core\\vistaforge.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25B7817E-80F1-4077-A13C-D2FDC6A34CF6}|VistaForge.Core\\VistaForge.Core.csproj|solutionrelative:vistaforge.core\\vistaforge.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{981EFAA3-133B-45F8-BDFD-DF841A0104A1}|VistaForge\\VistaForge.App.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge\\vistaforge.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{981EFAA3-133B-45F8-BDFD-DF841A0104A1}|VistaForge\\VistaForge.App.csproj|solutionrelative:vistaforge\\vistaforge.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C755D88-D065-4446-AF2F-2CDE2E49DC06}|VistaForge.SDK\\VistaForge.SDK.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge.sdk\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C755D88-D065-4446-AF2F-2CDE2E49DC06}|VistaForge.SDK\\VistaForge.SDK.csproj|solutionrelative:vistaforge.sdk\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6050A351-F79C-4A72-8F7B-DBD93F1C6D54}|VistaForge.Widgets\\VistaForge.Widgets.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge.widgets\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6050A351-F79C-4A72-8F7B-DBD93F1C6D54}|VistaForge.Widgets\\VistaForge.Widgets.csproj|solutionrelative:vistaforge.widgets\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B7817E-80F1-4077-A13C-D2FDC6A34CF6}|VistaForge.Core\\VistaForge.Core.csproj|c:\\users\\user\\desktop\\vistaforge\\vistaforge-widgets\\vistaforge\\vistaforge.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B7817E-80F1-4077-A13C-D2FDC6A34CF6}|VistaForge.Core\\VistaForge.Core.csproj|solutionrelative:vistaforge.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VistaForge.Core",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Core\\VistaForge.Core.csproj",
+              "RelativeDocumentMoniker": "VistaForge.Core\\VistaForge.Core.csproj",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Core\\VistaForge.Core.csproj",
+              "RelativeToolTip": "VistaForge.Core\\VistaForge.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-29T19:11:01.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaForge.Widgets",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Widgets\\VistaForge.Widgets.csproj",
+              "RelativeDocumentMoniker": "VistaForge.Widgets\\VistaForge.Widgets.csproj",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Widgets\\VistaForge.Widgets.csproj",
+              "RelativeToolTip": "VistaForge.Widgets\\VistaForge.Widgets.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-29T19:09:27.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VistaForge.App",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge\\VistaForge.App.csproj",
+              "RelativeDocumentMoniker": "VistaForge\\VistaForge.App.csproj",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge\\VistaForge.App.csproj",
+              "RelativeToolTip": "VistaForge\\VistaForge.App.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-29T19:07:25.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.SDK\\Class1.cs",
+              "RelativeDocumentMoniker": "VistaForge.SDK\\Class1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.SDK\\Class1.cs",
+              "RelativeToolTip": "VistaForge.SDK\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T19:06:17.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Widgets\\Class1.cs",
+              "RelativeDocumentMoniker": "VistaForge.Widgets\\Class1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Widgets\\Class1.cs",
+              "RelativeToolTip": "VistaForge.Widgets\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T19:05:41.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Core\\Class1.cs",
+              "RelativeDocumentMoniker": "VistaForge.Core\\Class1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\VistaForge\\VistaForge-Widgets\\VistaForge\\VistaForge.Core\\Class1.cs",
+              "RelativeToolTip": "VistaForge.Core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T19:05:13.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
