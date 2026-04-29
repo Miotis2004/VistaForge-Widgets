@@ -7,7 +7,9 @@
   <Project Path="VistaForge.Core/VistaForge.Core.csproj" />
   <Project Path="VistaForge.SDK/VistaForge.SDK.csproj" />
   <Project Path="VistaForge.Widgets/VistaForge.Widgets.csproj" />
-  <Project Path="VistaForge/VistaForge.App.csproj">
+  <Project Path="../tests/VistaForge.Core.Tests/VistaForge.Core.Tests.csproj" />
+  <Project Path="../tests/VistaForge.Widgets.Tests/VistaForge.Widgets.Tests.csproj" />
+  <Project Path="VistaForge.App/VistaForge.App.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
