@@ -8,32 +8,32 @@ namespace VistaForge.Widgets.ClockWidget
     {
         public ClockWidgetControl()
         {
-            this.InitializeComponent();
+            //this.InitializeComponent();
         }
 
         private void ModeToggle_Toggled(object sender, RoutedEventArgs e)
         {
-            if (ModeToggle.IsOn)
+            if (false /* ModeToggle.IsOn */)
             {
-                DigitalText.Visibility = Visibility.Collapsed;
-                AnalogGrid.Visibility = Visibility.Visible;
+                //DigitalText.Visibility = Visibility.Collapsed;
+                //AnalogGrid.Visibility = Visibility.Visible;
             }
             else
             {
-                DigitalText.Visibility = Visibility.Visible;
-                AnalogGrid.Visibility = Visibility.Collapsed;
+                //DigitalText.Visibility = Visibility.Visible;
+                //AnalogGrid.Visibility = Visibility.Collapsed;
             }
         }
 
         public void UpdateTime(DateTime time)
         {
             // Update Digital
-            DigitalText.Text = time.ToString("HH:mm:ss");
+            //DigitalText.Text = time.ToString("HH:mm:ss");
 
             // Update Analog
-            SecondRotate.Angle = time.Second * 6;
-            MinuteRotate.Angle = (time.Minute * 6) + (time.Second * 0.1);
-            HourRotate.Angle = (time.Hour * 30) + (time.Minute * 0.5);
+            //SecondRotate.Angle = time.Second * 6;
+            //MinuteRotate.Angle = (time.Minute * 6) + (time.Second * 0.1);
+            //HourRotate.Angle = (time.Hour * 30) + (time.Minute * 0.5);
         }
     }
 }

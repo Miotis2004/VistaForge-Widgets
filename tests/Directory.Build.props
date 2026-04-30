@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    <DefaultXamlRuntime>None</DefaultXamlRuntime>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <GenerateProjectPriFile>false</GenerateProjectPriFile>
+    <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
+    <UseXamlCompilerExecutable>false</UseXamlCompilerExecutable>
+    <UseWinUI>false</UseWinUI>
+  </PropertyGroup>
+</Project>
