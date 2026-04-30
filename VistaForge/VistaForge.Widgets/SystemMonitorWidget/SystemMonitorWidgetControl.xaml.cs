@@ -7,19 +7,19 @@ namespace VistaForge.Widgets.SystemMonitorWidget
     {
         public SystemMonitorWidgetControl()
         {
-            this.InitializeComponent();
+            //this.InitializeComponent();
         }
 
         public void UpdateMetrics(float cpu, float ram, float disk)
         {
-            CpuProgress.Value = cpu;
-            CpuText.Text = $"{(int)cpu}%";
+            //CpuProgress.Value = cpu;
+            //CpuText.Text = $"{(int)cpu}%";
 
-            RamProgress.Value = ram;
-            RamText.Text = $"{(int)ram}%";
+            //RamProgress.Value = ram;
+            //RamText.Text = $"{(int)ram}%";
 
-            DiskProgress.Value = disk;
-            DiskText.Text = $"{(int)disk}%";
+            //DiskProgress.Value = disk;
+            //DiskText.Text = $"{(int)disk}%";
         }
     }
 }

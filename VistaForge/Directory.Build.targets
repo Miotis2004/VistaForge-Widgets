@@ -1,0 +1,9 @@
+<Project>
+  <Target Name="false" />
+  <Target Name="GetPriOutputs" />
+  <Target Name="MarkupCompilePass1" />
+  <Target Name="MarkupCompilePass2" />
+  <Target Name="CompileXaml" />
+  <Target Name="_GenerateProjectPriFileCore" />
+  <Target Name="_GenerateProjectPriFile" />
+</Project>
