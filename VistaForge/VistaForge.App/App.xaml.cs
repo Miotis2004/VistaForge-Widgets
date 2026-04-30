@@ -34,7 +34,7 @@ namespace VistaForge
         /// </summary>
         public App()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         /// <summary>

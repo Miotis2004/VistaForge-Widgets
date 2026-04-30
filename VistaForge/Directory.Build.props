@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    <DefaultXamlRuntime>None</DefaultXamlRuntime>
+  </PropertyGroup>
+</Project>

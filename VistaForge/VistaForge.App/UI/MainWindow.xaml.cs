@@ -30,7 +30,7 @@ namespace VistaForge.UI
 
         public MainWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
 
             // Setup Frameless and Transparent Window
             IntPtr hWnd = WindowNative.GetWindowHandle(this);
